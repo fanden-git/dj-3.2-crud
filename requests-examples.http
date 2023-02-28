@@ -82,12 +82,12 @@ Content-Type: application/json
 {
   "positions": [
     {
-      "product": 4,
+      "product": 5,
       "quantity": 100,
       "price": 130.80
     },
     {
-      "product": 5,
+      "product": 6,
       "quantity": 243,
       "price": 145
     }
