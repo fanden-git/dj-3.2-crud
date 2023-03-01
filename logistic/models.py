@@ -13,7 +13,6 @@ class Stock(models.Model):
                                       through='StockProduct',
                                       related_name='stocks')
 
-
 class StockProduct(models.Model):
     stock = models.ForeignKey(Stock,
                               on_delete=models.CASCADE,

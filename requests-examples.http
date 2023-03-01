@@ -26,7 +26,7 @@ Content-Type: application/json
 ###
 
 # получение
-GET http://localhost:8000/api/v1/stocks/
+GET http://localhost:8000/api/v1/stocks/3
 Content-Type: application/json
 
 ###
@@ -42,7 +42,7 @@ Content-Type: application/json
 ###
 
 # удаление продукта
-DELETE http://localhost:8000/api/v1/products/1/
+DELETE http://localhost:8000/api/v1/products/3/
 Content-Type: application/json
 
 ###
@@ -58,15 +58,15 @@ POST http://localhost:8000/api/v1/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес 5",
+  "address": "мой адрес 7",
   "positions": [
     {
-      "product": 6,
+      "product": 4,
       "quantity": 250,
       "price": 120.50
     },
     {
-      "product": 7,
+      "product": 5,
       "quantity": 100,
       "price": 180
     }
@@ -76,20 +76,20 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH http://localhost:8000/api/v1/stocks/3/
+PATCH http://localhost:8000/api/v1/stocks/5/
 Content-Type: application/json
 
 {
   "positions": [
     {
-      "product": 5,
-      "quantity": 100,
-      "price": 130.80
+      "product": 4,
+      "quantity": 550,
+      "price": 180
     },
     {
       "product": 6,
-      "quantity": 243,
-      "price": 145
+      "quantity": 550,
+      "price": 175
     }
   ]
 }
